@@ -1,5 +1,6 @@
 package com.woona.challengecricket
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
@@ -49,7 +50,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     private fun onLoginButtonClick() {
-
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent);
     }
 
     override fun onBackPressed() {
